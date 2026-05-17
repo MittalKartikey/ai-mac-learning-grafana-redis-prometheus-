@@ -8,7 +8,7 @@ fi
 echo "Starting environment setup..."
 
 if [ -f "requirements.txt" ]; then
-    pip3 install --no-cache-dir -r requirements.txt
+    pip3 install --no-cache-dir -r requirements.txt --break-system-packages
 else
     echo "Warning: requirements.txt not found."
 fi
@@ -18,7 +18,7 @@ docker compose up -d
 
 sleep 5
 
-python3 store_redis.py > store_redis.log 2>&1 &
+sudo -u "$SUDO_USER" python3 store_redis.py > store_redis.log 2>&1 &
 INGEST_PID=$!
 
 cleanup() {
