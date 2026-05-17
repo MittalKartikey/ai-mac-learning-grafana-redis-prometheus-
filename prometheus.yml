@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 2s     # Forces Prometheus to scrape every 2 seconds for real-time tracking
+  evaluation_interval: 2s
+
+scrape_configs:
+  - job_name: 'mac_learning_metrics'
+    static_configs:
+      - targets: ['localhost:8000'] # Assumes store_redis.py exposes metrics on port 8000
