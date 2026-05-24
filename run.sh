@@ -18,12 +18,8 @@ docker compose up -d
 
 sleep 5
 
-sudo -u "$SUDO_USER" python3 store_redis.py > store_redis.log 2>&1 &
-INGEST_PID=$!
-
 cleanup() {
     echo "Shutting down services..."
-    kill $INGEST_PID 2>/dev/null
     docker compose down
     mn -c &> /dev/null
     exit 0
@@ -34,4 +30,5 @@ trap cleanup SIGINT SIGTERM EXIT
 echo "Launching Mininet Topology..."
 echo "Grafana Dashboard is available at: http://localhost:3000"
 
-python3 topo.py
+# The Master Pipe: Connects the topology output directly to the Prometheus handler!
+python3 topo.py | /home/acer/r1_mac_env/bin/python3 store_redis.py

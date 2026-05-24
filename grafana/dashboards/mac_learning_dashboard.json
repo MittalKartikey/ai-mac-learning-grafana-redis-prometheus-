@@ -6,7 +6,7 @@
     "namespace": "default",
     "uid": "0b760f7a-b845-41b2-91d2-5ac1442e84a7",
     "resourceVersion": "1777376942069994",
-    "generation": 27,
+    "generation": 28,
     "creationTimestamp": "2026-04-18T21:00:29Z",
     "labels": {
       "grafana.app/deprecatedInternalID": "972907255300096"
@@ -63,7 +63,7 @@
                       "group": "prometheus",
                       "version": "v0",
                       "datasource": {
-                        "name": "ffjhr862wh5vke"
+                        "name": "Prometheus"
                       },
                       "spec": {
                         "editorMode": "code",
@@ -183,7 +183,7 @@
                       "group": "prometheus",
                       "version": "v0",
                       "datasource": {
-                        "name": "ffjhr862wh5vke"
+                        "name": "Prometheus"
                       },
                       "spec": {
                         "editorMode": "code",
@@ -269,7 +269,7 @@
                       "group": "prometheus",
                       "version": "v0",
                       "datasource": {
-                        "name": "ffjhr862wh5vke"
+                        "name": "Prometheus"
                       },
                       "spec": {
                         "editorMode": "code",
@@ -369,11 +369,10 @@
                       "group": "prometheus",
                       "version": "v0",
                       "datasource": {
-                        "name": "ffjhr862wh5vke"
+                        "name": "Prometheus"
                       },
                       "spec": {
                         "editorMode": "code",
-                        "exemplar": false,
                         "expr": "network_dropped_packets_rate{switch=~\"s2\", port =~\"$port\"}",
                         "instant": false,
                         "legendFormat": "__auto",
@@ -489,7 +488,7 @@
                       "group": "prometheus",
                       "version": "v0",
                       "datasource": {
-                        "name": "ffjhr862wh5vke"
+                        "name": "Prometheus"
                       },
                       "spec": {
                         "editorMode": "code",
@@ -589,7 +588,7 @@
                       "group": "prometheus",
                       "version": "v0",
                       "datasource": {
-                        "name": "ffjhr862wh5vke"
+                        "name": "Prometheus"
                       },
                       "spec": {
                         "editorMode": "code",
@@ -675,7 +674,7 @@
                       "group": "prometheus",
                       "version": "v0",
                       "datasource": {
-                        "name": "ffjhr862wh5vke"
+                        "name": "Prometheus"
                       },
                       "spec": {
                         "editorMode": "builder",
@@ -767,7 +766,7 @@
                       "group": "prometheus",
                       "version": "v0",
                       "datasource": {
-                        "name": "ffjhr862wh5vke"
+                        "name": "Prometheus"
                       },
                       "spec": {
                         "editorMode": "code",
@@ -852,7 +851,7 @@
                       "group": "prometheus",
                       "version": "v0",
                       "datasource": {
-                        "name": "ffjhr862wh5vke"
+                        "name": "Prometheus"
                       },
                       "spec": {
                         "editorMode": "code",
@@ -937,7 +936,7 @@
                       "group": "prometheus",
                       "version": "v0",
                       "datasource": {
-                        "name": "ffjhr862wh5vke"
+                        "name": "Prometheus"
                       },
                       "spec": {
                         "editorMode": "code",
@@ -1022,11 +1021,10 @@
                       "group": "prometheus",
                       "version": "v0",
                       "datasource": {
-                        "name": "ffjhr862wh5vke"
+                        "name": "Prometheus"
                       },
                       "spec": {
                         "editorMode": "code",
-                        "exemplar": false,
                         "expr": "network_mac_info{switch=\"s1\"}",
                         "format": "table",
                         "instant": true,
@@ -1121,11 +1119,10 @@
                       "group": "prometheus",
                       "version": "v0",
                       "datasource": {
-                        "name": "ffjhr862wh5vke"
+                        "name": "Prometheus"
                       },
                       "spec": {
                         "editorMode": "code",
-                        "exemplar": false,
                         "expr": "network_mac_info{switch=\"s2\"}",
                         "format": "table",
                         "instant": true,
@@ -1220,7 +1217,7 @@
                       "group": "prometheus",
                       "version": "v0",
                       "datasource": {
-                        "name": "ffjhr862wh5vke"
+                        "name": "Prometheus"
                       },
                       "spec": {
                         "editorMode": "code",
@@ -1513,7 +1510,7 @@
             "group": "prometheus",
             "version": "v0",
             "datasource": {
-              "name": "ffjhr862wh5vke"
+              "name": "Prometheus"
             },
             "spec": {
               "qryType": 1,
@@ -1548,7 +1545,7 @@
             "group": "prometheus",
             "version": "v0",
             "datasource": {
-              "name": "ffjhr862wh5vke"
+              "name": "Prometheus"
             },
             "spec": {
               "qryType": 1,
